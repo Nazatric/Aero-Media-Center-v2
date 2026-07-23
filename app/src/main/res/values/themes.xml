@@ -1,0 +1,11 @@
+<resources>
+    <!-- Base application theme. Compose supplies all real theming (see ui/theme/) —
+         this just needs to be a no-action-bar dark theme so there's no light-theme
+         flash before the first Compose frame draws. -->
+    <style name="Theme.AeroMedia" parent="android:Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@color/aero_window_background</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+</resources>

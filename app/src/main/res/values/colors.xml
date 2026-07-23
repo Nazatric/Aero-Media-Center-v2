@@ -1,0 +1,5 @@
+<resources>
+    <!-- Matches the darkest stop of the ui/theme/Color.kt gradient background,
+         so there's no flash of a different color before Compose's first frame. -->
+    <color name="aero_window_background">#0B1220</color>
+</resources>

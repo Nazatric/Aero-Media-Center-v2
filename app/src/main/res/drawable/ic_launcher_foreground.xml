@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Original artwork for this project: a glossy chrome orb with a play glyph,
+     in the spirit of the skeuomorphic buttons used throughout the app (see
+     ui/theme/SkeuoEffects.kt). Not derived from any other app's icon.
+
+     Deliberately built from plain solid-color fills and a stroke rather than
+     <aapt:attr>/<gradient> — that syntax is valid but has been a recurring,
+     version-specific source of AAPT2 resource-compile failures, and there's
+     no compiler available in this sandbox to verify it against. A flatter
+     orb that's guaranteed to compile beats a glossier one that might not. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- soft drop shadow beneath the orb -->
+    <path
+        android:pathData="M25,58 A29,29 0 1,0 83,58 A29,29 0 1,0 25,58 Z"
+        android:fillColor="#40000000" />
+
+    <!-- orb body: flat steel-blue fill -->
+    <path
+        android:pathData="M24,54 A30,30 0 1,0 84,54 A30,30 0 1,0 24,54 Z"
+        android:fillColor="#8AA0C2" />
+
+    <!-- thin bevel rim -->
+    <path
+        android:pathData="M24,54 A30,30 0 1,0 84,54 A30,30 0 1,0 24,54 Z"
+        android:strokeColor="#1A2233"
+        android:strokeWidth="1.1"
+        android:fillColor="#00000000" />
+
+    <!-- gloss highlight, upper portion of the orb -->
+    <path
+        android:pathData="M32,40 A16,9 0 1,0 64,40 A16,9 0 1,0 32,40 Z"
+        android:fillColor="#66FFFFFF" />
+
+    <!-- play glyph shadow (subtle emboss) -->
+    <path
+        android:pathData="M46,41 L46,68 L71,55 Z"
+        android:fillColor="#332A3550" />
+
+    <!-- play glyph -->
+    <path
+        android:pathData="M45,40 L45,67 L70,53.5 Z"
+        android:fillColor="#FFFAF3E3" />
+
+</vector>

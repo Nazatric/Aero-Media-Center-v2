@@ -1,0 +1,28 @@
+*.iml
+.gradle/
+/local.properties
+/.idea/
+.DS_Store
+/build/
+/captures/
+.externalNativeBuild/
+.cxx/
+local.properties
+keystore.properties
+*.keystore
+*.jks
+
+# Gradle wrapper distribution cache (the wrapper *scripts* + jar are committed;
+# the downloaded Gradle distribution itself is not)
+gradle/wrapper/dists/
+
+# Android Studio
+.navigation/
+captures/
+*.apk
+*.ap_
+*.dex
+*.class
+bin/
+gen/
+out/

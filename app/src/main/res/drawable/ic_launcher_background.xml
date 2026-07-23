@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Original artwork for this project: a layered "sunrise" glow echoing the
+     blue-to-orange mood in the reference home-screen wallpaper, not a copy of
+     any existing app's mark. Deliberately built from plain solid-color
+     layered paths rather than <aapt:attr>/<gradient> — that syntax is valid
+     but has been a recurring source of AAPT2/AGP-version-specific resource
+     compile failures in the wild, and there's no way to compile-test it in
+     this sandbox, so the simplest, hardest-to-break option wins here. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- base: deep navy fill -->
+    <path
+        android:pathData="M0,0h108v108h-108z"
+        android:fillColor="#0B1B33" />
+    <!-- mid glow: large soft blue disc, center (60,36) radius 75 -->
+    <path
+        android:pathData="M-15,36 A75,75 0 1,0 135,36 A75,75 0 1,0 -15,36 Z"
+        android:fillColor="#3E6FBE" />
+    <!-- highlight: smaller warm disc, center (56,28) radius 48, for the "sunrise" core -->
+    <path
+        android:pathData="M8,28 A48,48 0 1,0 104,28 A48,48 0 1,0 8,28 Z"
+        android:fillColor="#FFB873" />
+</vector>
